@@ -5,13 +5,14 @@ import LogIn from "./components/pages/Login";
 import ForgetPassword from "./components/pages/ForgetPassword";
 import EmailVerification from "./components/pages/EmailVerification";
 import "./App.scss";
+// import Header from "./components/shared/Header/Header";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/" exact component={SignUp} />
+          <Route path="/signup" exact component={SignUp} />
           <Route path="/login" component={LogIn} />
           <Route path="/forgetpassword" component={ForgetPassword} />
           <Route path="/emailverification" component={EmailVerification} />

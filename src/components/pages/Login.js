@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../redux/actions/authentication/login";
 
+import OtherAuth from "./OtherAuth";
+
 export default function SignUp() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
@@ -23,6 +25,8 @@ export default function SignUp() {
       >
         Submit
       </button>
+      <OtherAuth />
+
       {msg}
       <br />
       {user ? user.email : ""}
