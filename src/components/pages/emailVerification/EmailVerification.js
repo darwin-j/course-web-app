@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import sendVerificationEmail from "../../redux/actions/authentication/emailVerification";
-import { auth } from "./../../firebase/base";
+import sendVerificationEmail from "../../../redux/actions/authentication/emailVerification";
+import { auth } from "../../../firebase/base";
 
-export default function SignUp() {
+export default function EmailVerification() {
   const [email, setEmail] = useState();
 
   const dispatch = useDispatch();

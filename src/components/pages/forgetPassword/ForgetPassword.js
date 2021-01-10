@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import emailSent from "../../redux/actions/authentication/forgetPassword";
+import emailSent from "../../../redux/actions/authentication/forgetPassword";
 
-export default function SignUp() {
+export default function ForgetPassword() {
   const [email, setEmail] = useState();
 
   const dispatch = useDispatch();

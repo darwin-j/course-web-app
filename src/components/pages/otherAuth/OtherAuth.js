@@ -1,6 +1,6 @@
 import React from "react";
-import googleAuth from "./../../redux/actions/authentication/googleAuth";
-import facebookAuth from "./../../redux/actions/authentication/facebookAuth";
+import googleAuth from "../../../redux/actions/authentication/googleAuth";
+import facebookAuth from "../../../redux/actions/authentication/facebookAuth";
 import { useDispatch, useSelector } from "react-redux";
 
 export default function OtherAuth() {

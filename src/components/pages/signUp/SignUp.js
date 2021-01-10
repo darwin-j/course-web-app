@@ -1,17 +1,14 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { login } from "../../redux/actions/authentication/login";
-
-import OtherAuth from "./OtherAuth";
+import { signup } from "../../../redux/actions/authentication/signup";
 
 export default function SignUp() {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
   const dispatch = useDispatch();
-  const loading = useSelector((state) => state.loginReducer.loading);
-  const msg = useSelector((state) => state.loginReducer.message);
-  const user = useSelector((state) => state.loginReducer.user);
+  const loading = useSelector((state) => state.signupReducer.loading);
+  const msg = useSelector((state) => state.signupReducer.message);
 
   return (
     <div>
@@ -21,15 +18,11 @@ export default function SignUp() {
       <input value={password} onChange={(e) => setPassword(e.target.value)} />
       <button
         disabled={loading}
-        onClick={() => dispatch(login(email, password))}
+        onClick={() => dispatch(signup(email, password))}
       >
         Submit
       </button>
-      <OtherAuth />
-
       {msg}
-      <br />
-      {user ? user.email : ""}
     </div>
   );
 }
