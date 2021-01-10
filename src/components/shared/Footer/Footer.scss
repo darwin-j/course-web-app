@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 2rem;
+    &-brand {
+        font-size: 2rem;
+    }
+
+    &-img {
+        display: flex;
+
+        &--1 {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1rem;
+        }
+
+        &--2 {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1rem;
+        }
+
+        &--3 {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
