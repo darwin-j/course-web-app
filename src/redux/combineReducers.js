@@ -6,6 +6,8 @@ import emailVerifyReducer from "./reducers/authentication/emailVerification";
 import googleAuthReducer from "./reducers/authentication/googleAuth";
 import facebookAuthReducer from "./reducers/authentication/facebookAuth";
 
+import uploadProfileReducer from "./reducers/uploadProfile";
+
 import { combineReducers } from "redux";
 
 const allReducers = combineReducers({
@@ -15,6 +17,7 @@ const allReducers = combineReducers({
   emailVerifyReducer,
   googleAuthReducer,
   facebookAuthReducer,
+  uploadProfileReducer,
 });
 
 export default allReducers;

@@ -7,6 +7,7 @@ import EmailVerification from "./components/pages/emailVerification/EmailVerific
 import "./App.scss";
 import Header from "./components/shared/Header/Header";
 import Footer from "./components/shared/Footer/Footer";
+import EditProfile from "./components/pages/editProfile/EditProfile";
 
 import ContactUs from "./components/pages/contactUs/ContactUs";
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/forgetpassword" component={ForgetPassword} />
           <Route path="/emailverification" component={EmailVerification} />
           <Route path="/contactus" component={ContactUs} />
+          <Route path="/editprofile" component={EditProfile} />
         </Switch>
         <Footer />
       </Router>
