@@ -1,5 +1,3 @@
-import { auth } from "./../../../firebase/base";
-
 const emailSentReq = () => {
   return {
     type: "emailSentReq",

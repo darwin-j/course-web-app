@@ -1,4 +1,4 @@
-import { storageRef } from "../../firebase/base";
+import { storageRef } from "./../../../firebase/base";
 
 const uploadReq = () => {
   return {
@@ -23,7 +23,7 @@ const uploadFailed = (error) => {
 const upload = (file) => async (dispatch) => {
   try {
     dispatch(uploadReq());
-    storageRef.child(`images/profile/${file.name}`).put(file);
+    await storageRef.child(`images/profile/${file.name}`).put(file);
     storageRef
       .child(`images/profile/${file.name}`)
       .getDownloadURL()
